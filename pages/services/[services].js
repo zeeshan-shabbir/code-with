@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import NavBar from '../../components/navbar'
+import NavBar from '../../components/NavBar'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -21,9 +21,9 @@ const Post = () => {
     <NavBar profile={profile} />
 
     <div>
-      <div className="h1">
-        hello world
-      </div>
+      <h1 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+          Here's what I have done with the past
+        </h1>
     </div>
 
   
