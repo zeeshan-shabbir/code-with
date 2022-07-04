@@ -290,7 +290,7 @@ export default function Home({ }) {
             })
           }
 
-          <div className="group rounded px-8 py-12 shadow hover:bg-primary">
+          {/* <div className="group rounded px-8 py-12 shadow hover:bg-primary">
             <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <Image width={'100%'} height={'100%'} src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
@@ -379,7 +379,7 @@ export default function Home({ }) {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
