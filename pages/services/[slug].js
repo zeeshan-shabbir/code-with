@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import NavBar from '../../components/navbar'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Post = () => {
   let profile = {
@@ -11,16 +12,18 @@ const Post = () => {
     twitterLink: "www.facebook.com",
 
   }
-  return <><>
-<Head>
-<title>{'blog.title'}</title>
-</Head>
-    <NavBar profile={profile}  />
+  return (
+    <>
+
+    <Head>
+      <title>{'blog.title'}</title>
+    </Head>
+    <NavBar profile={profile} />
 
     <div>
       <div className="container py-6 md:py-10">
         <div className="mx-auto max-w-4xl">
-         
+
           <div className="mt-10 flex justify-between border-t border-lila py-12">
             <Link href="/" className="flex items-center">
               <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
@@ -37,7 +40,7 @@ const Post = () => {
           <div
             className="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
             <div className="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
-              <img src="/assets/img/blog-author.jpg" className="rounded-full shadow" alt="author image" />
+              <Image width={'100%'} height={'100%'} src="/assets/img/blog-author.jpg" className="rounded-full shadow" alt="author image" />
             </div>
             <div className="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
               <h3 className="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">
@@ -100,8 +103,9 @@ const Post = () => {
         </div>
       </div>
     </div>
+    </>
 
-  </> </>
+  )
 }
 
 export default Post
